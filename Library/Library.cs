@@ -1,5 +1,11 @@
-public class Library
+﻿public class Library
 {
+  // Авторские права
+  public static void About()
+  {
+    Console.WriteLine("(с) Автор Волченко В.В.");
+  }
+
   // 1 метод описания программы с выводом в терминал
   public static void GetText(string text)
   {
@@ -10,6 +16,19 @@ public class Library
   {
     Console.Write(text);
     return Convert.ToInt32(Console.ReadLine());
+  }
+  public static int Maximum(int a, int b)
+  {
+    int max = a;
+    if (a > b)
+    {
+      max = a;
+    }
+    else
+    {
+      max = b;
+    }
+    return max;
   }
 
   // 1.2 метод приглашения к вводу дробного числа с терминала

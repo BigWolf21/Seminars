@@ -11,11 +11,7 @@ GetText("Введите два числа, для поиска из них бо�
 int numberA = GetNumber("Первое число - ");
 int numberB = GetNumber("Второе число - ");
 
-if (numberA > numberB)
-{
-  GetText($"Число -{numberA}- больше, чем число -{numberB}-");
-}
-else
-{
-  GetText($"Число -{numberA}- меньше, чем число -{numberB}");
-}
+int max = Maximum(numberA, numberB);
+GetText($"Число -{max}- большее");
+
+About();
